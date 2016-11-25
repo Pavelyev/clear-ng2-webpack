@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -22,6 +23,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './app/index.html',
             inject: 'body',
-        })],
+        }),
+        new webpack.optimize.CommonsChunkPlugin("common.js")
+    ],
     devtool: 'source-map'
 };
