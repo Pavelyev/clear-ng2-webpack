@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --progress --display-error-details",
-    "start": "webpack-dev-server --inline --progress --port 3000"
+    "start": "webpack-dev-server --inline --hot --progress --port 3000"
   },
   "dependencies": {
     "@angular/common": "~2.2.3",
