@@ -1,11 +1,13 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: ['./app'],
-    devtool: 'source-map',
+    entry: {
+        app: './app/app'
+    },
     output: {
         path: 'dist',
-        filename: './bundle.js',
+        filename: '[name].bundle.js',
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [new HtmlWebpackPlugin()],
+    devtool: 'source-map'
 };

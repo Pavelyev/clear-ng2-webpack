@@ -1,7 +1,7 @@
 {
     "scripts": {
         "build": "webpack --progress",
-        "start": "webpack-dev-server --progress --port 3000"
+        "start": "webpack-dev-server --inline --progress --port 3000"
     },
     "devDependencies": {
         "html-webpack-plugin": "2.24.1",
