@@ -14,7 +14,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.ts/, loader: 'ts', exclude: /node_modules/ }
+            { test: /\.ts$/, loader: 'ts' },
+            { test: /\.(html|css)$/, loader: 'raw' },
         ]
     },
     plugins: [
