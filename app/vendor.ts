@@ -1,5 +1,5 @@
-///<reference path="../node_modules/@types/requirejs/index.d.ts" />
 ///<reference path="../node_modules/@types/es6-shim/index.d.ts" />
+///<reference path="../node_modules/@types/node/index.d.ts" />
 
 import 'reflect-metadata';
 import 'rxjs';
